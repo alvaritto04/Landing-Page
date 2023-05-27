@@ -1,0 +1,616 @@
+* {
+    /*Modificados para este en caja*/
+    box-sizing: border-box;
+}
+
+.links {
+    text-decoration: none;
+}
+
+header .logo {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(197, 166, 219);
+    border-radius: 5px;
+    padding: 0 5px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+header .logo:hover {
+    color: black;
+    background: white;
+    transition: 0.5s;
+}
+
+
+/*Esta propieda la utilizamos para que cuando nosotros cliquemos en las diferentes partes del menu
+se vaya dirigiendo a cada una de las partes de manera lenta(como una animación)*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/foto1.jpg);
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+.PP {
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+.letraNegra {
+    color: black;
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(101, 33, 165);
+}
+
+.botonEnviar {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+    margin-top: 20px;
+}
+
+.botonEnviar:hover {
+    background-color: rgb(101, 33, 165);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: blueviolet;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+    /*Medida ocho respecto a la vista de altura view height*/
+    height: 8vh;
+}
+
+header .container {
+    /*Lo utilizamos para  estableces un contenedor flexible , se ajusta automaticamente para
+    llenar el espacio disponible dfentro del contenedor*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    /*Lo organizamos por columas*/
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-left: 30px;
+}
+
+header a:hover {
+    color: blueviolet;
+    transition: 0.3s;
+    padding: 2px;
+    border-bottom: 5px solid rgb(137, 66, 188);
+    font-size: 0.9em;
+    font-size: 20px;
+}
+
+.LetrasInicio {
+    display: flex;
+    align-items: center;
+    /*Justifi content sirve para justificar el contenido */
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/foto1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.LetrasInicio h1 {
+    color: white;
+}
+
+.LetrasInicio button {
+    font-size: 1.75em;
+}
+
+#quienSoy .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#misProyectos {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#misProyectos .container {
+    padding: 150px 12px;
+}
+
+#misProyectos h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#misProyectos p {
+    display: none;
+}
+
+#misProyectos .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+
+/*Esta parte de aqui la utilizamos para colocar las imagenes en lo de mis proyectos, tanto la primera como
+la segunda, como la tercera*/
+
+.carta:first-child {
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/front-end.jpg);
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/full-stack-cropped.jpg);
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//img/personaProgramando.jpg);
+}
+
+#curriculumVitale .container {
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#curriculumVitale li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 100vh;
+}
+
+#contacto h2 {
+    font-size: 8vw;
+}
+
+#contacto button {
+    width: 200px;
+    height: 70px;
+    margin-left: -50px;
+    margin-bottom: 20px;
+}
+
+
+/*Propiedad de prueba*/
+
+
+/*footer {
+    /*background-color: rgb(230, 230, 230);
+}*/
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: white;
+}
+
+footer .ContenedorFooter {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: -50px;
+}
+
+.personaTrabajando {
+    width: 300px;
+    height: 300px;
+}
+
+
+/**/
+
+h1 {
+    margin: 0;
+}
+
+
+/* Contenido principal */
+
+.contenedorCurriculum {
+    max-width: 790px;
+    margin: -200px auto;
+    padding: 20px;
+    background-color: #779acc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 5px;
+    border-radius: 3px;
+    border: 3px solid #017b67;
+    font-size: 8px;
+    margin-top: -610px;
+}
+
+.personaTrabajando {
+    width: 500px;
+    height: 500px;
+    margin-top: -120px;
+}
+
+
+/* Sección de información personal */
+
+.InfoPersonal {
+    display: flex;
+}
+
+.ImgPerfil {
+    /*Establece las propiedades de flex, grow 0, (el elemento no crecerá más alla de su tamaño inicial, shrink 0,(el elemento
+    no se reducirá su tamaño si hay falta de espacio, basis 200px, (tamaño inical se establece en 200px)*/
+    flex: 0 0 200px;
+    margin-right: 20px;
+}
+
+.ImgPerfil img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.InfoTextPerfil {
+    /*Permite que el elemento se expanda y ocupe todo el espacio disponible en el contenedor flex*/
+    flex: 1;
+    color: white;
+}
+
+.InfoTextPerfil h2 {
+    margin: 0;
+    color: #371e5f;
+}
+
+.InfoTextPerfil p {
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+
+/* Sección de habilidades */
+
+.Habilidades {
+    margin-top: 10px;
+    color: white;
+}
+
+.Habilidades h2 {
+    color: #371e5f;
+}
+
+.HabilidadesLista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.HabilidadesEjemplos {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+/* Sección de experiencia laboral */
+
+.Experiencia {
+    margin-top: 20px;
+    color: white;
+}
+
+.Experiencia h2 {
+    color: #371e5f;
+}
+
+.ExperienciaLista {
+    margin-top: 10px;
+}
+
+.ExpercienciaEjemplo {
+    margin-bottom: 20px;
+}
+
+.ExperienciaEjemplo h3 {
+    margin: 0;
+}
+
+.ExperienciaEjemplo p {
+    margin-top: 10px;
+    line-height: 1.4;
+    font-size: 13px;
+}
+
+.imagenesContacto {
+    width: 20px;
+    height: 20px;
+}
+
+
+/*El responsive hay cosas que fallan, ajustar*/
+
+@media (min-width: 992px) {
+    header {
+        /*Posicionamos el elemento de forma fija*/
+        position: fixed;
+        width: 100%;
+    }
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav {
+        flex-direction: row;
+        padding-right: 20px;
+    }
+    #LetrasInicio h1 {
+        font-size: 5em;
+    }
+    #quienSoy .container {
+        display: flex;
+    }
+    #quienSoy .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    #quienSoy h2 {
+        margin-top: 0px;
+        color: white;
+    }
+    #quienSoy .ContenedorImagen {
+        background-image: url(../img/Alvaro.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    #misProyectos .programas {
+        display: flex;
+        justify-content: center;
+    }
+    #misProyectos p {
+        display: block;
+        margin-bottom: 30px;
+    }
+    #misProyectos h2 {
+        font-size: 4em;
+    }
+    #misProyectos h3 {
+        margin-top: 0;
+    }
+    /*Aqui es donde a medida que se hace pequeño, se quita todo lo que es el texto, y se queda la imagen por 
+    defecto que pusimos anteriormente, tambien se queda el +info*/
+    #misProyectos .carta {
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    #curriculumVitale {
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+    }
+    #curriculumVitale .container {
+        /*Valor inicial, alineamiento horizontal del texto*/
+        text-align: initial;
+    }
+    #curriculumVitale ul {
+        margin-left: 100px;
+    }
+    #contacto h2 {
+        font-size: 5em;
+    }
+    #contacto button {
+        font-size: 2em;
+    }
+    footer .ContenedorFooter {
+        justify-content: flex-end;
+    }
+}
+
+
+/*Hacemos desaparecer la foto de perfil*/
+
+@media (max-width: 850px) {
+    .fotoPerfil {
+        display: none;
+    }
+}
+
+
+/*---------------------------------------*/
+
+.bodyProyectos {
+    display: flex;
+    /*Propiedades para alinear y ajustar mejor las cartas*/
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(194, 221, 96);
+    background-image: url(../img/foto1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    /*Aplicar margenes con resto de cartas*/
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*Indica como el contenido de un elemento debera ser redimensionado para ajustarle a su contenedor*/
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgb(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}

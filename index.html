@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Álvaro Serrano</p>
+            <nav class="navbar">
+                <a href="#quienSoy">Quien Soy</a>
+                <a href="#misProyectos">Mis Proyectos</a>
+                <a href="#curriculumVitale">Curriculum Vitale</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="LetrasInicio">
+        <h1>Proyecto Lenguaje de Marcas <br>Landing Page Personal</h1>
+        <button><a href="#contacto" class="links">Contacto</a></button>
+    </section>
+
+    <section id="quienSoy">
+        <div class="container">
+            <div class="ContenedorImagen"></div>
+            <div class="texto">
+                <h2>¿Quien Soy?</h2>
+                <h2>Álvaro Serrano Colomer</h2>
+                <p>Me llamo Álvaro Serrano Colomer, tengo 18 años, actualmente estoy estudiando Desarrollo de Aplicaciones Web (DAW), primer año, en la Universidad Europea,me gusta mucho el deporte y salir con los amigos, me considero una persona creativa
+                    y capaz de hacer grandes cosas, me siento bastante cómodo trabajando en equipo,en cuanto a experiencia laboral, no tengo ningun tipo de experiencia laboral, por lo que no he trabajado nunca. </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="misProyectos">
+        <div class="container">
+            <h2>Mis Proyectos</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Proyecto Integrador</h3>
+                    <p>Este Proyecto se baso en la creacion de una aplicación para guardar proyectos, la realizamos en grupo, y engloba las asignaturas, de entornos de desarrollo, bases de datos y Programación.</p>
+                    <button><a href="proyectos.html" class="links">+ Info</a></button>
+                </div>
+                <div class="carta">
+                    <h3>Proyecto Programa Bolera</h3>
+                    <p>Este proyecto se trataba de la creación de una partida de bolos funcional en java, este proyecto los realizé individualmente, y este proyecto principalmente pertenecia a la asignatura de Programación.</p>
+                    <button><a href="proyectos.html" class="links">+ Info</a></button>
+                </div>
+                <div class="carta">
+                    <h3>Proyecto Pimera WEB</h3>
+                    <p>Este proyecto, se basa en la creacion de una pagina web de la universidad, programado en vsCode, la realizé individualmente y pertenece a la asignatura de Lenguaje de Marcas.</p>
+                    <button><a href="proyectos.html" class="links">+ Info</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculumVitale">
+        <div class="container">
+            <div>
+                <img src="img/fotodesign.png" alt="Persona Trabajando" class="personaTrabajando">
+                <div class="contenedorCurriculum">
+                    <div class="InfoPersonal">
+                        <div class="ImgPerfil">
+                            <img src="img/Alvaro.jpg" alt="Foto de Perfil" class="fotoPerfil">
+                        </div>
+                        <div class="InfoTextPerfil">
+                            <h2><i>Información Personal</i></h2>
+                            <p><span class="letraNegra">Nombre:</span> Álvaro Serrano</p>
+                            <p><span class="letraNegra">Fecha de nacimiento:</span> 1 de septiembre de 2004</p>
+                            <p><span class="letraNegra">Correo electrónico:</span> alvaroserrano0109@gmail.com</p>
+                            <p><span class="letraNegra">Teléfono:</span> 637 245 567</p>
+                        </div>
+                    </div>
+                    <div class="Habilidades">
+                        <h2><i>Habilidades</i></h2>
+                        <div class="HabilidadesLista">
+                            <div class="HabilidadesEjemplos">HTML</div>
+                            <div class="HabilidadesEjemplos">CSS</div>
+                            <div class="HabilidadesEjemplos">JavaScript</div>
+                            <div class="HabilidadesEjemplos">Java</div>
+                            <div class="HabilidadesEjemplos">SQL</div>
+                        </div>
+                    </div>
+                    <div class="Experiencia">
+                        <h2><i>Experiencia Laboral</i></h2>
+                        <div class="ExperienciaLista">
+                            <div class="ExperienciaEjemplo">
+                                <p>Actualmente carezco de experiencia laboral ya que nunca he trabajado, unicamente he participado en la realización de distintos proyectos, realizados en grupo.</p>
+                                <p>Tambien estuve de voluntariado en un prograam que se realizó en la Universidad Europea UEM, llamado Programa-Me</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacta Conmigo</h2>
+        <form action="mailto:alvaroserrano0109@gmail.com" method="post">
+            Nombre:<img src="img/hombre.png" class="imagenesContacto"><input type="text" id="name" name="name" required><br> Telefono:
+            <img src="img/telefono.png" class="imagenesContacto"><input type="text" id="telefono" name="telefono" required><br> Email:<img src="img/email.png" class="imagenesContacto">
+
+            <input type="email" id="email" name="email" required><br> Mensaje:<img src="img/chat.png" class="imagenesContacto">
+
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <br>
+            <input type="submit" value="Enviar" class="botonEnviar"></input>
+        </form>
+        <br>
+    </section>
+
+    <footer>
+        <div class="ContenedorFooter">
+            <p>&copy; Pagina Landing Page Álvaro Serrano / 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
